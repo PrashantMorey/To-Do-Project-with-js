@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Todo-App</title>
+</head>
+<body>
+    <div class="header">
+        <span class="task">
+            <span class="task-1">Tasks</span><span class="task-2">List</span>
+        </span>
+        <span class="addItem">
+            <span class="addItem-1" onclick="clk()"><ion-icon  name="add-outline"></ion-icon></span>
+            <span class="addItem-2">Add Item</span>
+        </span>
+    </div>
+    <div class="newPage">
+        <span class="backButton" onclick="MainPage()"><ion-icon name="arrow-back-outline"></ion-icon></span>
+        <span class="backtext">Back</span>
+    </div>
+    <div  class="body">
+        <div class="block">
+            <h1>Add New Task</h1>
+            <input type="text" id="text" placeholder="Add New Task">
+            <div class="two-boxes">
+                <button class="a" onclick="addCards()">Add</button>
+                <button class="a" onclick="closeTask()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cardTitle"></div>
+    <div id="cardBody"></div>
+
+    <div  class="body-1">
+        <div class="block-1">
+            <h1>Add New Item</h1>
+            <input type="text" id="text-1" placeholder="Add New Item">
+            <div class="two-boxes-1">
+                <button class="a-1" onclick="addItem()">Add</button>
+                <button class="a-1" onclick="closeItem()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./index.js"></script>
+</body>
+
+</html>
